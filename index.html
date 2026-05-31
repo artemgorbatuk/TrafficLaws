@@ -6,571 +6,293 @@
     <title>Правила дорожного движения</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body id="top">
-    <header>
+  <body id="top" class="home-page">
+    <header class="site-header">
+      <p class="site-tagline">Справочник и личные заметки</p>
       <h1>Правила дорожного движения</h1>
     </header>
 
-    <nav id="TableContents" aria-label="Содержание">
-      <h2>Содержание</h2>
-      <ul>
-        <li>
-          <a href="#road">Дорога</a>:
-          <ul>
-            <li>
-              <a href="#road-types">Виды дорог</a>:
-              <ul>
-                <li><a href="#road-types">Автомагистраль [ПДД 1.2; Знак 5.1]</a></li>
-                <li><a href="#road-types">Дороги общего пользования вне населённых пунктов [ПДД 1.2; Знак 5.3]</a></li>
-                <li><a href="#road-types">Дорога в населённом пункте [ПДД 10.2; Знак 5.23.1, 5.23.2, 5.25]</a></li>
-                <li><a href="#road-types">Дорога для автомобилей [ПДД 1.2; Знак 5.3]</a></li>
-                <li><a href="#road-types">Жилая зона [ПДД 17.1; Знак 5.21]</a></li>
-                <li><a href="#road-types">Велосипедная зона [ПДД 24.1; Знак 5.33]</a></li>
-                <li><a href="#road-types">Выделенные полосы для общественного транспорта [ПДД 18.2; Знак 5.14.1]</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#road-elements">Элементы дороги</a>:
-              <ul>
-                <li><a href="#road-elements">Тротуары или обочины [ПДД 1.2]</a></li>
-                <li>
-                  <a href="#road-elements">Проезжие части</a>:
-                  <ul>
-                    <li><a href="#road-elements">Полосы движения [ПДД 1.2]</a></li>
-                    <li><a href="#road-elements">Полосы разгона, торможения, подъёма, аварийной остановки [ПДД 8.10]</a></li>
-                    <li><a href="#road-elements">Полоса для маршрутных транспортных средств (автобусы, троллейбусы) [Знак 5.14]</a></li>
-                    <li><a href="#road-elements">Велосипедная полоса (для велосипедистов, мопедов, СИМ) [Знак 5.14.3]</a></li>
-                    <li><a href="#road-elements">Реверсивная полоса движения [Знаки 5.15.1, 5.15.2; Разметка 1.9]</a></li>
-                    <li><a href="#road-elements">Дорога с односторонним движением [Знак 5.5, 5.6]</a></li>
-                  </ul>
-                </li>
-                <li><a href="#road-elements">Трамвайные пути [ПДД 9.6]</a></li>
-                <li>
-                  <a href="#road-elements">Разделительная полоса</a>
-                  <ul>
-                    <li><a href="#road-elements">Сплошная линия [Разметка 1.2]</a></li>
-                    <li><a href="#road-elements">Прерывистая линия [Разметка 1.5]</a></li>
-                    <li><a href="#road-elements">Островок безопасности [Разметка 1.16.1—1.16.3]</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#road-intersections">Места пересечения и взаимодействия</a>:
-              <ul>
-                <li>
-                  <a href="#road-intersections">Перекрёсток</a>
-                  <ul>
-                    <li><a href="#road-intersections">Регулируемый перекрёсток [ПДД 13.3]</a></li>
-                    <li><a href="#road-intersections">Нерегулируемый перекрёсток [ПДД 13.11]</a></li>
-                    <li><a href="#road-intersections">Главная и Второстепенная дорога</a></li>
-                    <li><a href="#road-intersections">Перекрёсток равнозначных дорог [ПДД 13.11]</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#road-intersections">Пешеходная инфраструктура</a>:
-                  <ul>
-                    <li><a href="#road-intersections">Пешеходный переход [Знак 5.19.1, 5.19.2]</a></li>
-                    <li><a href="#road-intersections">Пешеходная дорожка [Знак 4.5]</a></li>
-                    <li><a href="#road-intersections">Пешеходная зона [Знак 5.34]</a></li>
-                  </ul>
-                </li>
-                <li><a href="#road-intersections">Железнодорожный переезд [ПДД 15.1; Знак 1.1—1.4]</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#road-structures">Искусственные сооружения</a>:
-              <ul>
-                <li><a href="#road-structures">Тоннель [ПДД 11.7]</a></li>
-                <li><a href="#road-structures">Мост [ПДД 1.2]</a></li>
-                <li><a href="#road-structures">Эстакада [ПДД 1.2]</a></li>
-                <li><a href="#road-structures">Путепровод [ПДД 1.2]</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#road-services">Инфраструктура обслуживания</a>:
-              <ul>
-                <li><a href="#road-services">Маршрутные остановки [Знак 5.16]</a></li>
-                <li><a href="#road-services">Парковки [Знак 6.4]</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#vehicle">Транспортное средство (ТС)</a>
-          <ul>
-            <li>
-              <a href="#vehicle-characteristics">Характеристики</a>
-              <ul>
-                <li>
-                  <a href="#vehicle-mass">Масса</a>
-                  <ul>
-                    <li><a href="#vehicle-mass">Разрешённая максимальная масса [ПДД 23.1]</a></li>
-                    <li><a href="#vehicle-mass">Фактическая масса [ПДД 23.1]</a></li>
-                    <li><a href="#vehicle-mass">Снаряжённая масса [ПДД 23.1]</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#vehicle-lights">Световые приборы</a>
-                  <ul>
-                    <li><a href="#vehicle-lights">Фары ближнего/дальнего света [ПДД 19.1]</a></li>
-                    <li><a href="#vehicle-lights">Дневные ходовые огни [ПДД 19.5]</a></li>
-                    <li><a href="#vehicle-lights">Габаритные огни [ПДД 19.1]</a></li>
-                    <li><a href="#vehicle-lights">Указатели поворотов [ПДД 19.1]</a></li>
-                    <li><a href="#vehicle-lights">Стоп-сигналы [ПДД 19.1]</a></li>
-                    <li><a href="#vehicle-lights">Фонарь заднего хода [ПДД 19.1]</a></li>
-                    <li><a href="#vehicle-lights">Противотуманные фары [ПДД 19.4]</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#vehicle-movement">Движение и маневрирование</a>:
-              <ul>
-                <li>
-                  <a href="#vehicle-overtaking">Продольное движение и опережение</a>:
-                  <ul>
-                    <li><a href="#vehicle-overtaking">Обгон [ПДД 11.1—11.3]</a></li>
-                    <li><a href="#vehicle-overtaking">Опережение [ПДД 11.4]</a></li>
-                    <li><a href="#vehicle-overtaking">Перестроение [ПДД 8.4]</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#vehicle-start-turns">Изменение направления и начало движения</a>:
-                  <ul>
-                    <li><a href="#vehicle-start-turns">Начало движения [ПДД 8.1]</a></li>
-                    <li><a href="#vehicle-start-turns">Повороты направо/налево [ПДД 8.5]</a></li>
-                    <li><a href="#vehicle-start-turns">Разворот [ПДД 8.11]</a></li>
-                    <li><a href="#vehicle-start-turns">Движение задним ходом [ПДД 8.12]</a></li>
-                    <li><a href="#vehicle-start-turns">Движение по круговым развязкам («круг») [ПДД 13.9—13.12]</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#vehicle-stop-parking">Остановка и стоянка</a>:
-                  <ul>
-                    <li><a href="#vehicle-stop-parking">Остановка [ПДД 12.1—12.3]</a></li>
-                    <li><a href="#vehicle-stop-parking">Стоянка [ПДД 12.1—12.3]</a></li>
-                    <li><a href="#vehicle-stop-parking">Вынужденная остановка [ПДД 12.6]</a></li>
-                    <li><a href="#vehicle-stop-parking">Торможение (включая экстренное) [ПДД 10.5]</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#vehicle-interaction">Правила взаимодействия и общие понятия</a>:
-                  <ul>
-                    <li><a href="#vehicle-interaction">Преимущество (приоритет) [ПДД 1.2]</a></li>
-                    <li><a href="#vehicle-interaction">Требование уступить дорогу [ПДД 1.2]</a></li>
-                    <li><a href="#vehicle-interaction">Встречный разъезд [ПДД 11.7]</a></li>
-                    <li><a href="#vehicle-interaction">Опасное вождение [ПДД 2.7]</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#vehicle-speed">Скоростной режим [ПДД 10.1—10.5]</a>:
-                  <ul>
-                    <li>
-                      <a href="#vehicle-speed">Предельно допустимая скорость</a>
-                      <ul>
-                        <li><a href="#vehicle-speed">городские улицы</a></li>
-                        <li><a href="#vehicle-speed">трассы</a></li>
-                        <li><a href="#vehicle-speed">автомагистрали</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#vehicle-speed">Специальные ограничения скорости</a>
-                      <ul>
-                        <li><a href="#vehicle-speed">школы</a></li>
-                        <li><a href="#vehicle-speed">жилые зоны</a></li>
-                        <li><a href="#vehicle-speed">опасные участки</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#participants">Участниками дорожного движения являются</a>:
-          <ul>
-            <li>
-              <a href="#participants-vehicles">Транспортные средства (ТС)</a>:
-              <ul>
-                <li>
-                  <a href="#participants-vehicles-mechanical">Механические транспортные средства</a>
-                  <ul>
-                    <li><a href="#participants-vehicles-mechanical">Легковые автомобили (до 3,5 тонн) [ПДД 1.2]</a></li>
-                    <li><a href="#participants-vehicles-mechanical">Грузовые автомобили (более 3,5 тонн) [ПДД 1.2]</a></li>
-                    <li><a href="#participants-vehicles-mechanical">Автопоезда (тягачи с прицепами) [ПДД 1.2]</a></li>
-                    <li><a href="#participants-vehicles-mechanical">Мопеды [ПДД 1.2]</a></li>
-                    <li><a href="#participants-vehicles-mechanical">Мотоциклы [ПДД 1.2]</a></li>
-                    <li><a href="#participants-vehicles-mechanical">Квадрициклы [ПДД 1.2]</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#participants-vehicles-sim">Средства индивидуальной мобильности (СИМ)</a>
-                  <ul>
-                    <li><a href="#participants-vehicles-sim">Электросамокаты [ПДД 1.2]</a></li>
-                    <li><a href="#participants-vehicles-sim">Моноколёса [ПДД 1.2]</a></li>
-                    <li><a href="#participants-vehicles-sim">Квадроциклы [ПДД 1.2]</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#participants-vehicles-muscular">Мускульные транспортные средства</a>
-                  <ul>
-                    <li><a href="#participants-vehicles-muscular">Велосипеды [ПДД 1.2]</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#participants-vehicles-special">Особый статус</a>:
-                  <ul>
-                    <li>
-                      <a href="#participants-vehicles-special">Маршрутные транспортные средства</a>
-                      <ul>
-                        <li><a href="#participants-vehicles-special">Автобусы [ПДД 1.2]</a></li>
-                        <li><a href="#participants-vehicles-special">Троллейбусы [ПДД 1.2]</a></li>
-                        <li><a href="#participants-vehicles-special">Трамваи [ПДД 1.2]</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#participants-vehicles-special">Школьные автобусы [ПДД 22.6]</a></li>
-                    <li><a href="#participants-vehicles-special">Такси [ПДД 1.2]</a></li>
-                    <li><a href="#participants-vehicles-special">Организованная транспортная колонна [ПДД 2.7]</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#participants-individuals">Индивидуальные участники</a>:
-              <ul>
-                <li><a href="#participants-individuals">Водители [ПДД 1.2]</a></li>
-                <li><a href="#participants-individuals">Пассажиры [ПДД 5.1]</a></li>
-                <li>
-                  <a href="#participants-individuals">Пешеходы</a>
-                  <ul>
-                    <li><a href="#participants-individuals">Организованная пешеходная колонна [Знак 1.29]</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#participants-transportation">Перевозка грузов и пассажиров</a>:
-              <ul>
-                <li>
-                  <a href="#participants-transportation">Грузы</a>
-                  <ul>
-                    <li><a href="#participants-transportation">Опасные грузы [ПДД 23.5]</a></li>
-                  </ul>
-                </li>
-                <li><a href="#participants-transportation">Пассажиров [ПДД 22.1—22.9]</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#participants-regulation">Регулирование дорожного движения</a>:
-              <ul>
-                <li><a href="#participants-regulation">Сигналы светофоров [ПДД 6.2—6.5]</a></li>
-                <li><a href="#participants-regulation">Действия регулировщика [ПДД 6.10—6.15]</a></li>
-                <li><a href="#participants-regulation">Дорожные знаки [ПДД 5.1—8.26]</a></li>
-                <li><a href="#participants-regulation">Горизонтальная разметка [ПДД 1.1—1.26]</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#participants-conditions">Условия дорожного движения</a>:
-              <ul>
-                <li><a href="#participants-conditions">Недостаточная видимость [ПДД 1.2]</a></li>
-                <li><a href="#participants-conditions">Ограниченная видимость [ПДД 1.2]</a></li>
-                <li><a href="#participants-conditions">Препятствие [ПДД 1.2]</a></li>
-                <li><a href="#participants-conditions">Светлое время суток [ПДД 19.1]</a></li>
-                <li><a href="#participants-conditions">Темное время суток [ПДД 19.1]</a></li>
-                <li><a href="#participants-conditions">Погодные условия [ПДД 10.1]</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div class="home-layout">
+      <nav id="TableContents" class="toc-panel" aria-label="Содержание">
+        <h2>Содержание</h2>
+        <ul class="toc-tree">
+<li><a href="#road">Дорога</a>:
+<ul>
+<li><a class="nav-section" href="topics/road-types.html">Виды дорог</a>:
+<ul>
+<li><a href="topics/road-types.html#avtomagistral">Автомагистраль [ПДД 1.2 · Знак 5.1]</a></li>
+<li><a href="topics/road-types.html#dorogi-vne-naselennyh-punktov">Дороги общего пользования вне населённых пунктов [ПДД 1.2 · Знак 5.3]</a></li>
+<li><a href="topics/road-types.html#doroga-v-naselennyom-punkte">Дорога в населённом пункте [ПДД 10.2 · Знаки 5.23.1, 5.23.2, 5.25]</a></li>
+<li><a href="topics/road-types.html#doroga-dlya-avtomobiley">Дорога для автомобилей [ПДД 1.2 · Знак 5.3]</a></li>
+<li><a href="topics/road-types.html#zhilaya-zona">Жилая зона [ПДД 17.1 · Знак 5.21]</a></li>
+<li><a href="topics/road-types.html#velosipednaya-zona">Велосипедная зона [ПДД 24.1 · Знак 5.33]</a></li>
+<li><a href="topics/road-types.html#vydelennye-polosy-obshchestvennogo-transporta">Выделенные полосы для общественного транспорта [ПДД 18.2 · Знак 5.14.1]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/road-elements.html">Элементы дороги</a>:
+<ul>
+<li><a href="topics/road-elements.html#trotuary-ili-obochiny">Тротуары или обочины [ПДД 1.2]</a></li>
+<li><a href="topics/road-elements.html#polosy-dvizheniya">Полосы движения [ПДД 1.2]</a></li>
+<li><a href="topics/road-elements.html#polosy-razgona-tormozheniya-podema">Полосы разгона, торможения, подъёма, аварийной остановки [ПДД 8.10]</a></li>
+<li><a href="topics/road-elements.html#polosa-marshrutnyh-ts">Полоса для маршрутных транспортных средств (автобусы, троллейбусы) [Знак 5.14]</a></li>
+<li><a href="topics/road-elements.html#velosipednaya-polosa">Велосипедная полоса (для велосипедистов, мопедов, СИМ) [Знак 5.14.3]</a></li>
+<li><a href="topics/road-elements.html#reversivnaya-polosa">Реверсивная полоса движения [Знаки 5.15.1, 5.15.2 · Разметка 1.9]</a></li>
+<li><a href="topics/road-elements.html#doroga-odnostoronnego-dvizheniya">Дорога с односторонним движением [Знаки 5.5, 5.6]</a></li>
+<li><a href="topics/road-elements.html#tramvajnye-puti">Трамвайные пути [ПДД 9.6]</a></li>
+<li><a href="topics/road-elements.html#sploshnaya-liniya">Сплошная линия [Разметка 1.2]</a></li>
+<li><a href="topics/road-elements.html#preryvistaya-liniya">Прерывистая линия [Разметка 1.5]</a></li>
+<li><a href="topics/road-elements.html#ostrovok-bezopasnosti">Островок безопасности [Разметка 1.16.1—1.16.3]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/road-intersections.html">Места пересечения и взаимодействия</a>:
+<ul>
+<li><a href="topics/road-intersections.html#reguliruemyj-perekrestok">Регулируемый перекрёсток [ПДД 13.3]</a></li>
+<li><a href="topics/road-intersections.html#nereguliruemyj-perekrestok">Нерегулируемый перекрёсток [ПДД 13.11]</a></li>
+<li><a href="topics/road-intersections.html#glavnaya-i-vtorostepennaya-doroga">Главная и второстепенная дорога [ПДД 13.11]</a></li>
+<li><a href="topics/road-intersections.html#perekrestok-ravnoznachnyh-dorog">Перекрёсток равнозначных дорог [ПДД 13.11]</a></li>
+<li><a href="topics/road-intersections.html#peshehodnyj-perehod">Пешеходный переход [Знаки 5.19.1, 5.19.2]</a></li>
+<li><a href="topics/road-intersections.html#peshehodnaya-dorozhka">Пешеходная дорожка [Знак 4.5]</a></li>
+<li><a href="topics/road-intersections.html#peshehodnaya-zona">Пешеходная зона [Знак 5.34]</a></li>
+<li><a href="topics/road-intersections.html#zheleznodorozhnyj-pereezd">Железнодорожный переезд [ПДД 15.1 · Знаки 1.1—1.4]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/road-structures.html">Искусственные сооружения</a>:
+<ul>
+<li><a href="topics/road-structures.html#tonnel">Тоннель [ПДД 11.7]</a></li>
+<li><a href="topics/road-structures.html#most">Мост [ПДД 1.2]</a></li>
+<li><a href="topics/road-structures.html#estakada">Эстакада [ПДД 1.2]</a></li>
+<li><a href="topics/road-structures.html#puteprovod">Путепровод [ПДД 1.2]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/road-services.html">Инфраструктура обслуживания</a>:
+<ul>
+<li><a href="topics/road-services.html#marshrutnye-ostanovki">Маршрутные остановки [Знак 5.16]</a></li>
+<li><a href="topics/road-services.html#parkovki">Парковки [Знак 6.4]</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#vehicle">Транспортное средство (ТС)</a>:
+<ul>
+<li><span class="nav-group">Характеристики</span>:
+<ul>
+<li><a class="nav-section" href="topics/vehicle-mass.html">Масса</a>:
+<ul>
+<li><a href="topics/vehicle-mass.html#razreshennaya-maksimalnaya-massa">Разрешённая максимальная масса [ПДД 23.1]</a></li>
+<li><a href="topics/vehicle-mass.html#fakticheskaya-massa">Фактическая масса [ПДД 23.1]</a></li>
+<li><a href="topics/vehicle-mass.html#snaryazhennaya-massa">Снаряжённая масса [ПДД 23.1]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/vehicle-lights.html">Световые приборы</a>:
+<ul>
+<li><a href="topics/vehicle-lights.html#fary-blizhnego-dalnego-sveta">Фары ближнего/дальнего света [ПДД 19.1]</a></li>
+<li><a href="topics/vehicle-lights.html#dnevnye-hodovye-ogni">Дневные ходовые огни [ПДД 19.5]</a></li>
+<li><a href="topics/vehicle-lights.html#gabaritnye-ogni">Габаритные огни [ПДД 19.1]</a></li>
+<li><a href="topics/vehicle-lights.html#ukazateli-povorotov">Указатели поворотов [ПДД 19.1]</a></li>
+<li><a href="topics/vehicle-lights.html#stop-signaly">Стоп-сигналы [ПДД 19.1]</a></li>
+<li><a href="topics/vehicle-lights.html#fonar-zadnego-hoda">Фонарь заднего хода [ПДД 19.1]</a></li>
+<li><a href="topics/vehicle-lights.html#protivotumannye-fary">Противотуманные фары [ПДД 19.4]</a></li>
+</ul></li>
+</ul></li>
+<li><span class="nav-group">Движение и маневрирование</span>:
+<ul>
+<li><a class="nav-section" href="topics/vehicle-overtaking.html">Продольное движение и опережение</a>:
+<ul>
+<li><a href="topics/vehicle-overtaking.html#obgon">Обгон [ПДД 11.1—11.3]</a></li>
+<li><a href="topics/vehicle-overtaking.html#operezhenie">Опережение [ПДД 11.4]</a></li>
+<li><a href="topics/vehicle-overtaking.html#perestroenie">Перестроение [ПДД 8.4]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/vehicle-start-turns.html">Изменение направления и начало движения</a>:
+<ul>
+<li><a href="topics/vehicle-start-turns.html#nachalo-dvizheniya">Начало движения [ПДД 8.1]</a></li>
+<li><a href="topics/vehicle-start-turns.html#povoroty-napravo-nalevo">Повороты направо/налево [ПДД 8.5]</a></li>
+<li><a href="topics/vehicle-start-turns.html#razvorot">Разворот [ПДД 8.11]</a></li>
+<li><a href="topics/vehicle-start-turns.html#dvizhenie-zadnim-hodom">Движение задним ходом [ПДД 8.12]</a></li>
+<li><a href="topics/vehicle-start-turns.html#krugovoe-dvizhenie">Движение по круговым развязкам («круг») [ПДД 13.9—13.12]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/vehicle-stop-parking.html">Остановка и стоянка</a>:
+<ul>
+<li><a href="topics/vehicle-stop-parking.html#ostanovka">Остановка [ПДД 12.1—12.3]</a></li>
+<li><a href="topics/vehicle-stop-parking.html#stoyanka">Стоянка [ПДД 12.1—12.3]</a></li>
+<li><a href="topics/vehicle-stop-parking.html#vynuzhdennaya-ostanovka">Вынужденная остановка [ПДД 12.6]</a></li>
+<li><a href="topics/vehicle-stop-parking.html#tormozhenie">Торможение (включая экстренное) [ПДД 10.5]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/vehicle-interaction.html">Правила взаимодействия и общие понятия</a>:
+<ul>
+<li><a href="topics/vehicle-interaction.html#preimuschestvo">Преимущество (приоритет) [ПДД 1.2]</a></li>
+<li><a href="topics/vehicle-interaction.html#ustupit-dorogu">Требование уступить дорогу [ПДД 1.2]</a></li>
+<li><a href="topics/vehicle-interaction.html#vstrechnyj-razezd">Встречный разъезд [ПДД 11.7]</a></li>
+<li><a href="topics/vehicle-interaction.html#opasnoe-vozhdenie">Опасное вождение [ПДД 2.7]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/vehicle-speed.html">Скоростной режим</a>:
+<ul>
+<li><a href="topics/vehicle-speed.html#skorost-gorod">Городские улицы [ПДД 10.2]</a></li>
+<li><a href="topics/vehicle-speed.html#skorost-trassa">Трассы [ПДД 10.3]</a></li>
+<li><a href="topics/vehicle-speed.html#skorost-avtomagistral">Автомагистрали [ПДД 10.3]</a></li>
+<li><a href="topics/vehicle-speed.html#skorost-shkoly">Школы [ПДД 10.1]</a></li>
+<li><a href="topics/vehicle-speed.html#skorost-zhilaya-zona">Жилые зоны [ПДД 10.2]</a></li>
+<li><a href="topics/vehicle-speed.html#skorost-opasnye-uchastki">Опасные участки [ПДД 10.1]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#participants">Участники дорожного движения</a>:
+<ul>
+<li><span class="nav-group">Транспортные средства (ТС)</span>:
+<ul>
+<li><a class="nav-section" href="topics/participants-vehicles-mechanical.html">Механические транспортные средства</a>:
+<ul>
+<li><a href="topics/participants-vehicles-mechanical.html#legkovye-avtomobili">Легковые автомобили (до 3,5 тонн) [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-mechanical.html#gruzovye-avtomobili">Грузовые автомобили (более 3,5 тонн) [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-mechanical.html#avtopoezda">Автопоезда (тягачи с прицепами) [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-mechanical.html#mopedy">Мопеды [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-mechanical.html#mototsikly">Мотоциклы [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-mechanical.html#kvadritsikly">Квадрициклы [ПДД 1.2]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/participants-vehicles-sim.html">Средства индивидуальной мобильности (СИМ)</a>:
+<ul>
+<li><a href="topics/participants-vehicles-sim.html#elektrosamokaty">Электросамокаты [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-sim.html#monokolesa">Моноколёса [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-sim.html#kvadrotsikly">Квадроциклы [ПДД 1.2]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/participants-vehicles-muscular.html">Мускульные транспортные средства</a>:
+<ul>
+<li><a href="topics/participants-vehicles-muscular.html#velosipedy">Велосипеды [ПДД 1.2]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/participants-vehicles-special.html">Транспортные средства особого статуса</a>:
+<ul>
+<li><a href="topics/participants-vehicles-special.html#avtobusy">Автобусы [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-special.html#trollejbusy">Троллейбусы [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-special.html#tramvai">Трамваи [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-special.html#shkolnye-avtobusy">Школьные автобусы [ПДД 22.6]</a></li>
+<li><a href="topics/participants-vehicles-special.html#taksi">Такси [ПДД 1.2]</a></li>
+<li><a href="topics/participants-vehicles-special.html#organizovannaya-kolonna">Организованная транспортная колонна [ПДД 2.7]</a></li>
+</ul></li>
+</ul></li>
+<li><a class="nav-section" href="topics/participants-individuals.html">Индивидуальные участники</a>:
+<ul>
+<li><a href="topics/participants-individuals.html#voditeli">Водители [ПДД 1.2]</a></li>
+<li><a href="topics/participants-individuals.html#passazhiry">Пассажиры [ПДД 5.1]</a></li>
+<li><a href="topics/participants-individuals.html#peshehody">Пешеходы [ПДД 1.2]</a></li>
+<li><a href="topics/participants-individuals.html#organizovannaya-peshehodnaya-kolonna">Организованная пешеходная колонна [Знак 1.29]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/participants-transportation.html">Перевозка грузов и пассажиров</a>:
+<ul>
+<li><a href="topics/participants-transportation.html#opasnye-gruzy">Опасные грузы [ПДД 23.5]</a></li>
+<li><a href="topics/participants-transportation.html#perevozka-passazhirov">Пассажиров [ПДД 22.1—22.9]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/participants-regulation.html">Регулирование дорожного движения</a>:
+<ul>
+<li><a href="topics/participants-regulation.html#svetofory">Сигналы светофоров [ПДД 6.2—6.5]</a></li>
+<li><a href="topics/participants-regulation.html#regulirovschik">Действия регулировщика [ПДД 6.10—6.15]</a></li>
+<li><a href="topics/participants-regulation.html#dorozhnye-znaki">Дорожные знаки [ПДД 5.1—8.26]</a></li>
+<li><a href="topics/participants-regulation.html#gorizontalnaya-razmetka">Горизонтальная разметка [ПДД 1.1—1.26]</a></li>
+</ul></li>
+<li><a class="nav-section" href="topics/participants-conditions.html">Условия дорожного движения</a>:
+<ul>
+<li><a href="topics/participants-conditions.html#nedostatochnaya-vidimost">Недостаточная видимость [ПДД 1.2]</a></li>
+<li><a href="topics/participants-conditions.html#ogranichennaya-vidimost">Ограниченная видимость [ПДД 1.2]</a></li>
+<li><a href="topics/participants-conditions.html#prepyatstvie">Препятствие [ПДД 1.2]</a></li>
+<li><a href="topics/participants-conditions.html#svetloe-vremya-sutok">Светлое время суток [ПДД 19.1]</a></li>
+<li><a href="topics/participants-conditions.html#temnoe-vremya-sutok">Тёмное время суток [ПДД 19.1]</a></li>
+<li><a href="topics/participants-conditions.html#pogodnye-usloviya">Погодные условия [ПДД 10.1]</a></li>
+</ul></li>
+</ul></li>
+        </ul>
+      </nav>
 
-    <main>
-      <section id="road">
+      <main class="hub-main">
+        <p class="hub-intro">Выберите раздел для просмотра тем и заметок. Оглавление слева — для быстрого перехода к любому пункту.</p>
+      <section id="road" class="hub-block">
         <h2>Дорога</h2>
-
-        <section id="road-types">
-          <h3>Виды дорог</h3>
-          <ul>
-            <li>Автомагистраль [ПДД 1.2; Знак 5.1]</li>
-            <li>Дороги общего пользования вне населённых пунктов [ПДД 1.2; Знак 5.3]</li>
-            <li>Дорога в населённом пункте [ПДД 10.2; Знак 5.23.1, 5.23.2, 5.25]</li>
-            <li>Дорога для автомобилей [ПДД 1.2; Знак 5.3]</li>
-            <li>Жилая зона [ПДД 17.1; Знак 5.21]</li>
-            <li>Велосипедная зона [ПДД 24.1; Знак 5.33]</li>
-            <li>Выделенные полосы для общественного транспорта [ПДД 18.2; Знак 5.14.1]</li>
-          </ul>
-        </section>
-
-        <section id="road-elements">
-          <h3>Элементы дороги</h3>
-          <ul>
-            <li>Тротуары или обочины [ПДД 1.2]</li>
-            <li>
-              Проезжие части:
-              <ul>
-                <li>Полосы движения [ПДД 1.2]</li>
-                <li>Полосы разгона, торможения, подъёма, аварийной остановки [ПДД 8.10]</li>
-                <li>Полоса для маршрутных транспортных средств (автобусы, троллейбусы) [Знак 5.14]</li>
-                <li>Велосипедная полоса (для велосипедистов, мопедов, СИМ) [Знак 5.14.3]</li>
-                <li>Реверсивная полоса движения [Знаки 5.15.1, 5.15.2; Разметка 1.9]</li>
-                <li>Дорога с односторонним движением [Знак 5.5, 5.6]</li>
-              </ul>
-            </li>
-            <li>Трамвайные пути [ПДД 9.6]</li>
-            <li>
-              Разделительная полоса
-              <ul>
-                <li>Сплошная линия [Разметка 1.2]</li>
-                <li>Прерывистая линия [Разметка 1.5]</li>
-                <li>Островок безопасности [Разметка 1.16.1—1.16.3]</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <section id="road-intersections">
-          <h3>Места пересечения и взаимодействия</h3>
-          <ul>
-            <li>
-              Перекрёсток
-              <ul>
-                <li>Регулируемый перекрёсток [ПДД 13.3]</li>
-                <li>Нерегулируемый перекрёсток [ПДД 13.11]</li>
-                <li>Главная и Второстепенная дорога</li>
-                <li>Перекрёсток равнозначных дорог [ПДД 13.11]</li>
-              </ul>
-            </li>
-            <li>
-              Пешеходная инфраструктура:
-              <ul>
-                <li>Пешеходный переход [Знак 5.19.1, 5.19.2]</li>
-                <li>Пешеходная дорожка [Знак 4.5]</li>
-                <li>Пешеходная зона [Знак 5.34]</li>
-              </ul>
-            </li>
-            <li>Железнодорожный переезд [ПДД 15.1; Знак 1.1—1.4]</li>
-          </ul>
-        </section>
-
-        <section id="road-structures">
-          <h3>Искусственные сооружения</h3>
-          <ul>
-            <li>Тоннель [ПДД 11.7]</li>
-            <li>Мост [ПДД 1.2]</li>
-            <li>Эстакада [ПДД 1.2]</li>
-            <li>Путепровод [ПДД 1.2]</li>
-          </ul>
-        </section>
-
-        <section id="road-services">
-          <h3>Инфраструктура обслуживания</h3>
-          <ul>
-            <li>Маршрутные остановки [Знак 5.16]</li>
-            <li>Парковки [Знак 6.4]</li>
-          </ul>
-        </section>
+        <div class="section-cards">
+          <a class="section-card" href="topics/road-types.html">
+            <span class="section-card__title">Виды дорог</span>
+            <span class="section-card__meta">7 тем</span>
+          </a>
+          <a class="section-card" href="topics/road-elements.html">
+            <span class="section-card__title">Элементы дороги</span>
+            <span class="section-card__meta">11 тем</span>
+          </a>
+          <a class="section-card" href="topics/road-intersections.html">
+            <span class="section-card__title">Места пересечения и взаимодействия</span>
+            <span class="section-card__meta">8 тем</span>
+          </a>
+          <a class="section-card" href="topics/road-structures.html">
+            <span class="section-card__title">Искусственные сооружения</span>
+            <span class="section-card__meta">4 темы</span>
+          </a>
+          <a class="section-card" href="topics/road-services.html">
+            <span class="section-card__title">Инфраструктура обслуживания</span>
+            <span class="section-card__meta">2 темы</span>
+          </a>
+        </div>
       </section>
-
-      <section id="vehicle">
+      <section id="vehicle" class="hub-block">
         <h2>Транспортное средство (ТС)</h2>
-
-        <section id="vehicle-characteristics">
-          <h3>Характеристики</h3>
-          <section id="vehicle-mass">
-            <h4>Масса</h4>
-            <ul>
-              <li>Разрешённая максимальная масса [ПДД 23.1]</li>
-              <li>Фактическая масса [ПДД 23.1]</li>
-              <li>Снаряжённая масса [ПДД 23.1]</li>
-            </ul>
-          </section>
-          <section id="vehicle-lights">
-            <h4>Световые приборы</h4>
-            <ul>
-              <li>Фары ближнего/дальнего света [ПДД 19.1]</li>
-              <li>Дневные ходовые огни [ПДД 19.5]</li>
-              <li>Габаритные огни [ПДД 19.1]</li>
-              <li>Указатели поворотов [ПДД 19.1]</li>
-              <li>Стоп-сигналы [ПДД 19.1]</li>
-              <li>Фонарь заднего хода [ПДД 19.1]</li>
-              <li>Противотуманные фары [ПДД 19.4]</li>
-            </ul>
-          </section>
-        </section>
-
-        <section id="vehicle-movement">
-          <h3>Движение и маневрирование</h3>
-
-          <section id="vehicle-overtaking">
-            <h4>Продольное движение и опережение</h4>
-            <ul>
-              <li>Обгон [ПДД 11.1—11.3]</li>
-              <li>Опережение [ПДД 11.4]</li>
-              <li>Перестроение [ПДД 8.4]</li>
-            </ul>
-          </section>
-
-          <section id="vehicle-start-turns">
-            <h4>Изменение направления и начало движения</h4>
-            <ul>
-              <li>Начало движения [ПДД 8.1]</li>
-              <li>Повороты направо/налево [ПДД 8.5]</li>
-              <li>Разворот [ПДД 8.11]</li>
-              <li>Движение задним ходом [ПДД 8.12]</li>
-              <li>Движение по круговым развязкам («круг») [ПДД 13.9—13.12]</li>
-            </ul>
-          </section>
-
-          <section id="vehicle-stop-parking">
-            <h4>Остановка и стоянка</h4>
-            <ul>
-              <li>Остановка [ПДД 12.1—12.3]</li>
-              <li>Стоянка [ПДД 12.1—12.3]</li>
-              <li>Вынужденная остановка [ПДД 12.6]</li>
-              <li>Торможение (включая экстренное) [ПДД 10.5]</li>
-            </ul>
-          </section>
-
-          <section id="vehicle-interaction">
-            <h4>Правила взаимодействия и общие понятия</h4>
-            <ul>
-              <li>Преимущество (приоритет) [ПДД 1.2]</li>
-              <li>Требование уступить дорогу [ПДД 1.2]</li>
-              <li>Встречный разъезд [ПДД 11.7]</li>
-              <li>Опасное вождение [ПДД 2.7]</li>
-            </ul>
-          </section>
-
-          <section id="vehicle-speed">
-            <h4>Скоростной режим [ПДД 10.1—10.5]</h4>
-            <ul>
-              <li>
-                Предельно допустимая скорость
-                <ul>
-                  <li>городские улицы</li>
-                  <li>трассы</li>
-                  <li>автомагистрали</li>
-                </ul>
-              </li>
-              <li>
-                Специальные ограничения скорости
-                <ul>
-                  <li>школы</li>
-                  <li>жилые зоны</li>
-                  <li>опасные участки</li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-        </section>
+        <div class="section-cards">
+          <a class="section-card" href="topics/vehicle-mass.html">
+            <span class="section-card__title">Масса</span>
+            <span class="section-card__meta">3 темы</span>
+          </a>
+          <a class="section-card" href="topics/vehicle-lights.html">
+            <span class="section-card__title">Световые приборы</span>
+            <span class="section-card__meta">7 тем</span>
+          </a>
+          <a class="section-card" href="topics/vehicle-overtaking.html">
+            <span class="section-card__title">Продольное движение и опережение</span>
+            <span class="section-card__meta">3 темы</span>
+          </a>
+          <a class="section-card" href="topics/vehicle-start-turns.html">
+            <span class="section-card__title">Изменение направления и начало движения</span>
+            <span class="section-card__meta">5 тем</span>
+          </a>
+          <a class="section-card" href="topics/vehicle-stop-parking.html">
+            <span class="section-card__title">Остановка и стоянка</span>
+            <span class="section-card__meta">4 темы</span>
+          </a>
+          <a class="section-card" href="topics/vehicle-interaction.html">
+            <span class="section-card__title">Правила взаимодействия и общие понятия</span>
+            <span class="section-card__meta">4 темы</span>
+          </a>
+          <a class="section-card" href="topics/vehicle-speed.html">
+            <span class="section-card__title">Скоростной режим</span>
+            <span class="section-card__meta">6 тем</span>
+          </a>
+        </div>
       </section>
-
-      <section id="participants">
-        <h2>Участниками дорожного движения являются</h2>
-
-        <section id="participants-vehicles">
-          <h3>Транспортные средства (ТС)</h3>
-
-          <section id="participants-vehicles-mechanical">
-            <h4>Механические транспортные средства</h4>
-            <ul>
-              <li>Легковые автомобили (до 3,5 тонн) [ПДД 1.2]</li>
-              <li>Грузовые автомобили (более 3,5 тонн) [ПДД 1.2]</li>
-              <li>Автопоезда (тягачи с прицепами) [ПДД 1.2]</li>
-              <li>Мопеды [ПДД 1.2]</li>
-              <li>Мотоциклы [ПДД 1.2]</li>
-              <li>Квадрициклы [ПДД 1.2]</li>
-            </ul>
-          </section>
-
-          <section id="participants-vehicles-sim">
-            <h4>Средства индивидуальной мобильности (СИМ)</h4>
-            <ul>
-              <li>Электросамокаты [ПДД 1.2]</li>
-              <li>Моноколёса [ПДД 1.2]</li>
-              <li>Квадроциклы [ПДД 1.2]</li>
-            </ul>
-          </section>
-
-          <section id="participants-vehicles-muscular">
-            <h4>Мускульные транспортные средства</h4>
-            <ul>
-              <li>Велосипеды [ПДД 1.2]</li>
-            </ul>
-          </section>
-
-          <section id="participants-vehicles-special">
-            <h4>Особый статус</h4>
-            <ul>
-              <li>
-                Маршрутные транспортные средства
-                <ul>
-                  <li>Автобусы [ПДД 1.2]</li>
-                  <li>Троллейбусы [ПДД 1.2]</li>
-                  <li>Трамваи [ПДД 1.2]</li>
-                </ul>
-              </li>
-              <li>Школьные автобусы [ПДД 22.6]</li>
-              <li>Такси [ПДД 1.2]</li>
-              <li>Организованная транспортная колонна [ПДД 2.7]</li>
-            </ul>
-          </section>
-        </section>
-
-        <section id="participants-individuals">
-          <h3>Индивидуальные участники</h3>
-          <ul>
-            <li>Водители [ПДД 1.2]</li>
-            <li>Пассажиры [ПДД 5.1]</li>
-            <li>
-              Пешеходы
-              <ul>
-                <li>Организованная пешеходная колонна [Знак 1.29]</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <section id="participants-transportation">
-          <h3>Перевозка грузов и пассажиров</h3>
-          <ul>
-            <li>
-              Грузы
-              <ul>
-                <li>Опасные грузы [ПДД 23.5]</li>
-              </ul>
-            </li>
-            <li>Пассажиров [ПДД 22.1—22.9]</li>
-          </ul>
-        </section>
-
-        <section id="participants-regulation">
-          <h3>Регулирование дорожного движения</h3>
-          <ul>
-            <li>Сигналы светофоров [ПДД 6.2—6.5]</li>
-            <li>Действия регулировщика [ПДД 6.10—6.15]</li>
-            <li>Дорожные знаки [ПДД 5.1—8.26]</li>
-            <li>Горизонтальная разметка [ПДД 1.1—1.26]</li>
-          </ul>
-        </section>
-
-        <section id="participants-conditions">
-          <h3>Условия дорожного движения</h3>
-          <ul>
-            <li>Недостаточная видимость [ПДД 1.2]</li>
-            <li>Ограниченная видимость [ПДД 1.2]</li>
-            <li>Препятствие [ПДД 1.2]</li>
-            <li>Светлое время суток [ПДД 19.1]</li>
-            <li>Темное время суток [ПДД 19.1]</li>
-            <li>Погодные условия [ПДД 10.1]</li>
-          </ul>
-        </section>
+      <section id="participants" class="hub-block">
+        <h2>Участники дорожного движения</h2>
+        <div class="section-cards">
+          <a class="section-card" href="topics/participants-vehicles-mechanical.html">
+            <span class="section-card__title">Механические транспортные средства</span>
+            <span class="section-card__meta">6 тем</span>
+          </a>
+          <a class="section-card" href="topics/participants-vehicles-sim.html">
+            <span class="section-card__title">Средства индивидуальной мобильности (СИМ)</span>
+            <span class="section-card__meta">3 темы</span>
+          </a>
+          <a class="section-card" href="topics/participants-vehicles-muscular.html">
+            <span class="section-card__title">Мускульные транспортные средства</span>
+            <span class="section-card__meta">1 тема</span>
+          </a>
+          <a class="section-card" href="topics/participants-vehicles-special.html">
+            <span class="section-card__title">Транспортные средства особого статуса</span>
+            <span class="section-card__meta">6 тем</span>
+          </a>
+          <a class="section-card" href="topics/participants-individuals.html">
+            <span class="section-card__title">Индивидуальные участники</span>
+            <span class="section-card__meta">4 темы</span>
+          </a>
+          <a class="section-card" href="topics/participants-transportation.html">
+            <span class="section-card__title">Перевозка грузов и пассажиров</span>
+            <span class="section-card__meta">2 темы</span>
+          </a>
+          <a class="section-card" href="topics/participants-regulation.html">
+            <span class="section-card__title">Регулирование дорожного движения</span>
+            <span class="section-card__meta">4 темы</span>
+          </a>
+          <a class="section-card" href="topics/participants-conditions.html">
+            <span class="section-card__title">Условия дорожного движения</span>
+            <span class="section-card__meta">6 тем</span>
+          </a>
+        </div>
       </section>
-    </main>
+      </main>
+    </div>
 
-    <a class="back-to-top" href="#top" aria-label="Наверх">Наверх</a>
+    <a class="back-to-top" href="#top" aria-label="Наверх">↑</a>
   </body>
 </html>
