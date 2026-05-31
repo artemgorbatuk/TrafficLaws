@@ -365,8 +365,9 @@ SECTIONS: list[Section] = [
             {
                 "title": None,
                 "items": [
+                    {"slug": "passazhiry", "title": "Пассажиры", "refs": "ПДД 22.1—22.9", "signs": []},
+                    {"slug": "gruzy", "title": "Грузы", "refs": "ПДД 23.5", "signs": []},
                     {"slug": "opasnye-gruzy", "title": "Опасные грузы", "refs": "ПДД 23.5", "signs": []},
-                    {"slug": "perevozka-passazhirov", "title": "Пассажиров", "refs": "ПДД 22.1—22.9", "signs": []},
                 ],
             }
         ],
