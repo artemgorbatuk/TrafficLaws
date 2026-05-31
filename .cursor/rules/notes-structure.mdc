@@ -1,0 +1,69 @@
+---
+description: Структура сайта ПДД — оглавление, страницы разделов и заметки по темам
+alwaysApply: true
+---
+
+# Архитектура контента TrafficLaws
+
+Статический справочник по ПДД. **Не** складывать все заметки в `index.html` и **не** создавать отдельный HTML на каждый пункт (~96 тем).
+
+## Роли файлов
+
+| Файл | Назначение |
+|------|------------|
+| `index.html` | Главная: sticky-оглавление + карточки разделов (генерируется) |
+| `topics/<section-id>.html` | Страница раздела с карточками тем |
+| `topics/_template.html` | Образец разметки (ручное добавление — редко) |
+| `scripts/generate-topics.py` | **Источник истины**: slug, refs, знаки, генерация HTML |
+| `index.css` | Общие стили |
+| `TrafficSigns/` | PNG знаков; из `topics/` — `../TrafficSigns/05.01.png` |
+
+## Slug (якоря пунктов)
+
+- Транслит заголовка, **kebab-case**, только `a-z`, `0-9`, дефис
+- `ё` → `e`; имена **стабильны** после публикации
+- Полный список slug — массив `SECTIONS` в `scripts/generate-topics.py`
+- Имена знаков: `5.1` → `05.01.png`, `5.23.1` → `05.23.01.png`
+
+## Разметка темы
+
+```html
+<article id="avtomagistral" class="topic-card">
+  <header class="topic-card__header">
+    <h3>Автомагистраль</h3>
+    <p class="refs">ПДД 1.2 · Знак 5.1</p>
+  </header>
+  <div class="signs">
+    <img class="sign" src="../TrafficSigns/05.01.png" alt="Знак 5.1" loading="lazy" />
+  </div>
+  <div class="notes"><!-- заметки пользователя --></div>
+</article>
+```
+
+## Рабочий процесс
+
+1. **Новая тема** — добавить item в `SECTIONS` → `python scripts/generate-topics.py`
+2. **Заметки** — редактировать `<div class="notes">` в `topics/*.html` (генератор их не трогает, если не перезаписывать файл целиком; при регенерации — бэкапить заметки)
+3. **Новый раздел** — секция в `SECTIONS` + `HUB_BLOCKS` + `NAV_TREE` → регенерация
+
+> ⚠️ Повторный запуск `generate-topics.py` **перезаписывает** все `topics/*.html` и `index.html`. Заметки перед регенерацией сохранять или дописывать slug в скрипт и не перегенерировать готовые страницы.
+
+## «Тяжёлые» темы (отдельная страница позже)
+
+| Тема | Файл | Раздел-источник |
+|------|------|-----------------|
+| Обгон и опережение | `topics/obgon-i-operezhenie.html` | `vehicle-overtaking` |
+| Перекрёстки | `topics/perekrestki.html` | `road-intersections` |
+| Круговое движение | `topics/krugovoe-dvizhenie.html` | `vehicle-start-turns` |
+| Светофоры | `topics/svetofory-deep.html` | `participants-regulation` |
+| Регулировщик | `topics/regulirovschik-deep.html` | `participants-regulation` |
+| Дорожные знаки | `topics/dorozhnye-znaki.html` | `participants-regulation` |
+| Горизонтальная разметка | `topics/gorizontalnaya-razmetka.html` | `participants-regulation` |
+| Скоростной режим | `topics/skorostnoy-rezhim.html` | `vehicle-speed` |
+| Ж/д переезд | `topics/zheleznodorozhnyj-pereezd-deep.html` | `road-intersections` |
+
+Slug на section-странице (`svetofory`, `regulirovschik`) не совпадает с `-deep` файлами — с section-страницы ссылка «Подробнее».
+
+## 20 разделов (section-id)
+
+`road-types`, `road-elements`, `road-intersections`, `road-structures`, `road-services`, `vehicle-mass`, `vehicle-lights`, `vehicle-overtaking`, `vehicle-start-turns`, `vehicle-stop-parking`, `vehicle-interaction`, `vehicle-speed`, `participants-vehicles-mechanical`, `participants-vehicles-sim`, `participants-vehicles-muscular`, `participants-vehicles-special`, `participants-individuals`, `participants-transportation`, `participants-regulation`, `participants-conditions`
