@@ -390,6 +390,76 @@ img.sign {
   font-style: italic;
 }
 
+.notes-section + .notes-section {
+  margin-top: 1.35em;
+  padding-top: 1.15em;
+  border-top: 1px solid var(--border);
+}
+
+.notes-section__title {
+  margin: 0 0 0.55em;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-hover);
+}
+
+.notes p {
+  margin: 0.45em 0 0;
+}
+
+.notes p:first-child,
+.notes-section > p:first-of-type {
+  margin-top: 0;
+}
+
+.notes ul {
+  margin: 0.4em 0 0;
+  padding-left: 1.35em;
+}
+
+.notes li + li {
+  margin-top: 0.3em;
+}
+
+.notes .seealso {
+  margin-top: 1.35em;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
+  font-size: 14px;
+}
+
+.notes .seealso ul {
+  margin-bottom: 0;
+}
+
+.signs-catalog {
+  margin-top: 14px;
+}
+
+.signs-catalog__block + .signs-catalog__block {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.signs-catalog__title {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.signs-catalog__hint {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
 /* ── Floating back to top ── */
 
 .back-to-top {
