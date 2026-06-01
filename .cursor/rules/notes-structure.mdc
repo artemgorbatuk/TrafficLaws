@@ -50,6 +50,21 @@ alwaysApply: true
 - Генератор `render_signs()` в `generate-topics.py` сразу добавляет `title="{имя файла}"`.
 - Ручные вставки знаков: класс `sign` + скрипт на странице; при регенерации не забыть сохранить кастомные блоки знаков.
 
+## Знак рядом с правилом (`sign-list`)
+
+В «тяжёлых» темах верхний `signs-catalog` — обзор; в заметках для перечислений знаков использовать список с миниатюрой:
+
+```html
+<ul class="sign-list">
+  <li class="sign-list__item">
+    <img class="sign sign--inline" src="../TrafficSigns/04.01.01.png" alt="Знак 4.1.1" loading="lazy" />
+    <div class="sign-list__text"><strong>4.1.1</strong> «Движение прямо» — разворот не предусмотрен.</div>
+  </li>
+</ul>
+```
+
+Не сваливать несколько номеров в один пункт без картинок, если знаки различаются по смыслу.
+
 ## Рабочий процесс
 
 1. **Новая тема** — добавить item в `SECTIONS` → `python scripts/generate-topics.py`

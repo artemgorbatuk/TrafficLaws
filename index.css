@@ -461,6 +461,47 @@ img.sign {
   color: var(--text-muted);
 }
 
+.signs-catalog__lead {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Строка «миниатюра знака + пояснение» в заметках */
+.sign-list {
+  list-style: none;
+  margin: 0.55em 0 0;
+  padding: 0;
+}
+
+.sign-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 0.55em;
+}
+
+.sign-list__item:first-child {
+  margin-top: 0;
+}
+
+.sign-list__text {
+  flex: 1;
+  min-width: 0;
+  padding-top: 3px;
+}
+
+.sign-list__text p {
+  margin: 0;
+}
+
+img.sign--inline {
+  flex-shrink: 0;
+  max-height: 48px;
+  width: auto;
+  padding: 4px;
+}
+
 /* ── Floating back to top ── */
 
 .back-to-top {
