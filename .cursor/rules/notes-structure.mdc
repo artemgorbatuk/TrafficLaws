@@ -16,6 +16,7 @@ alwaysApply: true
 | `topics/_template.html` | Образец разметки (ручное добавление — редко) |
 | `scripts/generate-topics.py` | **Источник истины**: slug, refs, знаки, генерация HTML |
 | `index.css` | Общие стили |
+| `scripts/sign-tooltips.js` | Тултип с именем PNG при наведении на `img.sign` |
 | `TrafficSigns/` | PNG знаков; из `topics/` — `../TrafficSigns/05.01.png` |
 
 ## Slug (якоря пунктов)
@@ -34,11 +35,20 @@ alwaysApply: true
     <p class="refs">ПДД 1.2 · Знак 5.1</p>
   </header>
   <div class="signs">
-    <img class="sign" src="../TrafficSigns/05.01.png" alt="Знак 5.1" loading="lazy" />
+    <img class="sign" src="../TrafficSigns/05.01.png" alt="Знак 5.1" title="05.01.png" loading="lazy" />
   </div>
   <div class="notes"><!-- заметки пользователя --></div>
 </article>
 ```
+
+## Тултип знака (имя файла PNG)
+
+При наведении на изображение знака показывается **имя файла** из `TrafficSigns/` (например `04.01.03.png`), а не номер по ПДД.
+
+- Разметка: только `class="sign"` на `<img>`; `alt` — для доступности («Знак 5.1»), подсказка — через атрибут `title` и/или скрипт.
+- Страницы `topics/*.html` перед `</body>` подключают `<script src="../scripts/sign-tooltips.js" defer></script>` — скрипт выставляет `title` из последнего сегмента `src` для всех `img.sign` (в т.ч. в `signs-catalog`).
+- Генератор `render_signs()` в `generate-topics.py` сразу добавляет `title="{имя файла}"`.
+- Ручные вставки знаков: класс `sign` + скрипт на странице; при регенерации не забыть сохранить кастомные блоки знаков.
 
 ## Рабочий процесс
 

@@ -559,7 +559,7 @@ def render_signs(signs: list[str]) -> str:
             fn = sign_filename(num)
             parts.append(
                 f'        <img class="sign" src="../TrafficSigns/{esc(fn)}" '
-                f'alt="Знак {esc(num)}" loading="lazy" />'
+                f'alt="Знак {esc(num)}" title="{esc(fn)}" loading="lazy" />'
             )
     if not parts:
         return ""
@@ -643,6 +643,7 @@ def render_topic_page(section: Section) -> str:
     </div>
 
     <a class="back-to-top" href="#top" aria-label="Наверх">↑</a>
+    <script src="../scripts/sign-tooltips.js" defer></script>
   </body>
 </html>
 """
